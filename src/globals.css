@@ -1,0 +1,22 @@
+:root {
+  --fundo: #fcfcfc;
+  --texto: #2b2d2f;
+  --vermelho: #ee5055;
+  --verde: #46a571;
+  --verde-claro: #cbf9b3;
+  --amarelo: #ffd97d;
+  --salmao: #ff9b85;
+  --vermelho-claro: #facbcc;
+  --amarelo-claro: #ffecbe;
+  /* --salmao-claro: #ffe1da; */
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  display: none;
+}

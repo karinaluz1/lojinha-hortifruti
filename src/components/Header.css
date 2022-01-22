@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--amarelo);
+  background-image: linear-gradient(
+      rgba(255, 217, 125, 0.6),
+      rgba(255, 217, 125, 0.8)
+    ),
+    url('/public/img/frutas.png') !important;
+  background-size: 25%;
+  background-position: center center;
+  padding: 0.5rem 2rem;
+  min-height: 10rem;
+}
+
+.navbar__search {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar__input {
+  color: var(--texto);
+  font-size: 1.7rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1rem;
+  background-color: white;
+  border-radius: 7px;
+  padding: 6px 10px;
+  outline: none;
+  border: none;
+}
+
+.navbar__button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--salmao);
+  color: var(--fundo);
+}
+
+.navbar__profile {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__cart {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto);
+  font-size: 1.8rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: var(--texto);
+}
+
+.navbar__link:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px var(--salmao);
+  margin-top: -5px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+
+.navbar__link:hover:after {
+  transform: scaleX(1);
+}
+
+.navbar__badge {
+  position: absolute;
+  background-color: var(--vermelho);
+  color: var(--fundo);
+  font-size: 1rem;
+  width: 16px;
+  height: 16px;
+  margin-top: -20px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
